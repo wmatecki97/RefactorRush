@@ -1,12 +1,10 @@
 from langchain_openai import ChatOpenAI
+from langchain_groq import ChatGroq
 
 class FileProcessingClass:
     def __init__(self):
-        self.llm =  ChatOpenAI(
-    base_url="http://localhost:1234/v1",
-    temperature=0,
-    api_key="not-needed"
-)
+        self.llm = ChatGroq(temperature=0, model_name="mixtral-8x7b-32768")
+
 
     def process_file(self, file_path: str, prompt: str) -> None:
         with open(file_path, 'r') as file:
@@ -16,7 +14,7 @@ class FileProcessingClass:
         result = self.llm.invoke(prompt_with_file_content)
 
         with open(file_path, 'w') as file:
-            file.write(result.content.replace('```python\n', '').replace('```', ''))
+            file.write(result.content)
 
     def test(self, question):
         result = self.llm.invoke(question)
