@@ -43,3 +43,6 @@ Contributions are welcome! If you have any suggestions or improvements, feel fre
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/witkor)
