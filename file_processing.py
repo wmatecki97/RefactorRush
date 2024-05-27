@@ -16,7 +16,3 @@ class FileProcessingClass:
         with open(file_path, 'w') as file:
             file.write(result.content)
 
-    def test(self, question):
-        result = self.llm.invoke(question)
-        print(result.content)
-

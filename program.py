@@ -12,7 +12,7 @@ APP_STATE_FILE = "app_state.json"
 class FileSearchApp(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title("File Search and Process")
+        self.title("RefactorRush")
         self.geometry("800x600")
         self.directory = ctk.StringVar()
         self.pattern = ctk.StringVar()
